@@ -23,7 +23,7 @@ $(".info").each(function(){
    */
   $.get(userPage, function(resp){
     var html = $.parseHTML(resp);
-    var blockLink = $(html).find('#blocked-link').attr('data-url');
+    var blockLink = $(html).find('#blocked-link').attr('data-add-url');
     trollButton.attr('data-url', blockLink);
     trollButton.on('click', function(){
       var $this = $(this);
